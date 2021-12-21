@@ -1,0 +1,14 @@
+#The n th term in a Geometric progression is given as An= a*r^(n-1)
+#Where a is the first term, r is the common ratio and n is the number of terms.
+
+a=float(input(("Enter a(first term) here: ")))
+strt=a
+r=float(input("Enter common ratio 'r' here: "))
+n=float(input("Enter n here: "))
+m=1
+while a<((strt)*(r**(n-1))):
+      k=a
+      a=((strt)*(r**(m)))
+      m=m+1
+      a=k+a
+print(a)
